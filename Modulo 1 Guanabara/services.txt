@@ -1,6 +1,0 @@
-[
-{"service": "https://api.boosty.to/oauth/phone/authorize", "method": "POST", "headers": "", "data": {"client_id":"$phone"}, "params": {}, "json": {}, "+": 1},
-{"service": "https://shop.vsk.ru/ajax/auth/postSms/", "method": "POST", "headers": "", "data": {"phone":"$phone"}, "params": {}, "json": {}, "+": 0},
-{"service": "https://www.citilink.ru/registration/confirm/phone/$phone/", "method": "POST", "headers": "", "data": {}, "params": {}, "json": {}, "+": 1},
-{"service": "https://findclone.ru/register", "method": "POST", "headers": "", "data": {}, "params": {"phone": "$phone"}, "json": {}, "+": 1}
-]
