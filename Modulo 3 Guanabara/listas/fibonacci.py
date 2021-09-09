@@ -1,23 +1,21 @@
-def fibo (a,b,c):
-    {
-    c=a+b;
-    print (c,end=" ");
-    a=b;
-    b=c;
-}
 
+# Python Fibonacci series Program using While Loop
 
+# Fibonacci series will start at 0 and travel upto below number
+Number = int(input("\nPlease Enter the Range Number: "))
 
-
-
-t1=0
-print (t1,end=" ")
-t2=1
-print (t2,end=" ")
-for c in range (120):
-   # t3=t1+t2
-   # print (t3,end=" ")
-   # t1=t2
-   # t2=t3
-
-
+# Initializing First and Second Values of a Series
+i = 0
+First_Value = 0
+Second_Value = 1
+           
+# Find & Displaying Fibonacci series
+while(i < Number):
+    if(i <= 1):
+        Next = i
+    else:
+        Next = First_Value + Second_Value
+        First_Value = Second_Value
+        Second_Value = Next
+    print(Next,end="")
+    i = i + 1

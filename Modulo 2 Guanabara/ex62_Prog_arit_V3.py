@@ -8,9 +8,12 @@ while (inicio<fim):     #enquanto inicio menor do que fim
     print ("\033[34m{}\033[m".format(inicio),end=" | ")     #print inicio
     inicio+=passo                                           #inicio é igual ao inicio mais o passo a cada iteração
 
-fim2=int(input("\n\033[33mQueres mais quantos passos?? --> \033[m"))
-fim2=fim+(passo*fim2)
-while (inicio<fim2):
-    print ("\033[34m{}\033[m".format(inicio),end=" | ")     #print inicio
-    inicio+=passo 
+controle=""
+while (controle!=0):
+    controle=int(input("\n\033[33mQueres mais quantos passos?? (0 para sair) --> \033[m"))
+    fim2=fim+(passo*controle)
+    while fim<fim2 :
+        print ("\033[34m{}\033[m".format(fim),end=" | ")     #print inicio
+        fim+=passo 
 
+print ("\033[33;7m "+"{:=^40}".format("Saindo do programa Progressão Aritmética V3")+"\033[m")
