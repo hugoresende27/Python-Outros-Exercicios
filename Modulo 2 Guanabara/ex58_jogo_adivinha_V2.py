@@ -11,12 +11,15 @@ n_jog=""
 tentativas=0
 while (n_pc!=n_jog):
     n_jog=int(input("Em que número estou a pensar?? (0-10) --> "))
+    tentativas+=1
     print ("PENSANDO.....")
     sleep(0.2)
     if (n_pc==n_jog):
         print ("Você escolheu o número {} e saiu o número {} portanto GANHOU!!!".format(n_jog,n_pc))
         print ("Precisou de {} tentativas".format(tentativas))
-    else:
-        print("Você escolheu o número {} portanto PERDEU...".format(n_jog,n_pc))
-        tentativas+=1
+    elif (n_pc<n_jog):
+        print("Você escolheu o número {} portanto PERDEU... o número é mais baixo".format(n_jog,n_pc))
+        print ("TENTATIVA -- {}".format(tentativas))
+    elif (n_pc>n_jog):
+        print("Você escolheu o número {} portanto PERDEU... o número é mais alto".format(n_jog,n_pc))
         print ("TENTATIVA -- {}".format(tentativas))
