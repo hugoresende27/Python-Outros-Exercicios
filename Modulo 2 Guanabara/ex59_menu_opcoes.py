@@ -3,15 +3,14 @@ num1=float(input("Valor 1--> "))
 num2=float(input("Valor 2--> "))
 
 opcao=0
-while opcao!=5 or opcao!=4:
-
+while opcao!=5:
 
     print ("\033[31;43m=="*10+"MENU"+"=="*10)
-    print ("[1]-SOMAR" )
-    print ("[2]-MULTIPLICAR" )
-    print ("[3]-MAIOR" )
-    print ("[4]-NOVOS NUMEROS" )
-    print ("[5]-SAIR"+"\033[m" )
+    print ('''                [1]-SOMAR
+                [2]-MULTIPLICAR
+                [3]-MAIOR
+                [4]-NOVOS NUMEROS
+                [5]-SAIR\033[m''' )
     opcao=int(input("Opcao--> "))
     if opcao==1:
         print ("A soma de {} + {} é igual a {}".format(num1,num2,(num1+num2)))
@@ -26,7 +25,13 @@ while opcao!=5 or opcao!=4:
              print ("O maior entre  {} e {} é o {}".format(num1,num2,num2))
         else:
             print ("{} e {} são iguais ".format(num1,num2))
-        
+    elif opcao == 4:
+        num1=float(input("Valor 1--> "))
+        num2=float(input("Valor 2--> "))
+    elif opcao == 5:
+        break
+    else :
+        print ("Opcao inválida")
 
 print ("FINAL DO PROGRAMA")
     

@@ -11,11 +11,12 @@ while(sair!="s"):
     contador+=1
     if (contador==1):       #na primeira iteração (contador==1) o maior e o menor vão receber num
         maior=menor=num
-    if (num>maior):         #se num maior do que maior, var maior passa a ser o num
-        maior=num
-    if (num<menor):         #se num menor do que o menor, var menor passa a ser o num
-        menor=num
-    sair=str(input("\033[34;7mQuer sair? (s/n)--> \033[m")).lower().strip()
+    else:
+        if (num>maior):         #se num maior do que maior, var maior passa a ser o num
+            maior=num
+        if (num<menor):         #se num menor do que o menor, var menor passa a ser o num
+            menor=num
+    sair=str(input("\033[34;7mQuer sair? (s/n)--> \033[m")).lower().strip() [0] #[0] considerar só a primeira letra
 
 print ("Total números {}".format(contador))
 print ("Soma total {}".format(total))
