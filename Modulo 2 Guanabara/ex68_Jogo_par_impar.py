@@ -6,20 +6,16 @@ voltas=0
 vitoria=True
 while vitoria:
     aposta_jog=int(input("Digite um valor ::: "))
-    escolha=str(input("PAR ou IMPAR?? (P/I)--> ")).strip().lower()[0]
-    if escolha=="p":
-        aposta ="par"
-    elif escolha =="i":
-        aposta="impar"
-    else:
-        print ("escolha inválida")
+    escolha=" "
+    while escolha not in "pi":
+        escolha=str(input("PAR ou IMPAR?? (P/I)--> ")).strip().lower()[0]
 
     aposta_pc=randint(0,10)
 
     resultado = aposta_pc+aposta_jog
-
+    
     if (resultado %2==0):
-        if (aposta=="par"):
+        if (escolha=="p"):
             print (f"O total entre {aposta_jog} e {aposta_pc} é {resultado} e é PAR, Jogador venceu")
             vitoria=True
             voltas+=1
@@ -27,7 +23,7 @@ while vitoria:
             print (f"O total entre {aposta_jog} e {aposta_pc} é {resultado} e é PAR, Jogador perdeu")
             vitoria=False
     elif (resultado%2!=0):
-        if (aposta=="impar"):
+        if (escolha=="i"):
             print (f"O total entre {aposta_jog} e {aposta_pc} é {resultado} e é IMPAR, Jogador venceu")
             vitoria=True
             voltas+=1
