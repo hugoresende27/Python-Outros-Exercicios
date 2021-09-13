@@ -1,4 +1,4 @@
-print ("\033[7m "+"{:=^40}".format("Programa Tabuadas V3")+"\033[m")
+print ("\033[7m "+"{:=^40}".format("Programa Tabuadas V3 (- negativo para sair)")+"\033[m")
 
 while True:
     n=int(input("Tabuada do ::: "))
