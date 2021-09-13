@@ -1,6 +1,5 @@
 print ("\033[7m "+"{:=^40}".format("ANALISE DE DADOS")+"\033[m")
 
-
 pessoas_18=0
 homens=0
 mulheres20=0
@@ -8,18 +7,19 @@ while True:
     idade=int(input("\033[33;7mIdade: \033[m"))
     if idade>=18:
         pessoas_18+=1
-    sexo=str(input("\033[33;7mSexo: [M/F]: \033[m")).lower()[0]
+
+    sexo= " "
     while not sexo in 'mf':
-        sexo=str(input("\033[33;7mSexo: [M/F]: \033[m")).lower()[0]
+        sexo=str(input("\033[33;7mSexo: [M/F]: \033[m")).strip().lower()[0]
+        
     if sexo=="m":
-        homens+=1
-    
+        homens+=1   
     elif idade<=20 and sexo=="f":
         mulheres20+=1
-
-    sair=str(input("Quer continuar? [S/N]")).lower()[0]
+   
+    sair = " "
     while not sair in 'sn':
-        sair=str(input("Quer continuar? [S/N]--> ")).lower()[0]
+        sair=str(input("Quer continuar? [S/N]--> ")).strip().lower()[0]
     if sair=="n":
         break
 
