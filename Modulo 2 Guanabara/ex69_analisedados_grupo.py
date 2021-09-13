@@ -14,7 +14,7 @@ while True:
     if sexo=="m":
         homens+=1
     
-    if idade<=20 and sexo=="f":
+    elif idade<=20 and sexo=="f":
         mulheres20+=1
 
     sair=str(input("Quer continuar? [S/N]")).lower()[0]
