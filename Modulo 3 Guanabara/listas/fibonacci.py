@@ -17,5 +17,5 @@ while(i < Number):
         Next = First_Value + Second_Value
         First_Value = Second_Value
         Second_Value = Next
-    print(Next,end="")
+    print(Next,end=" | ")
     i = i + 1

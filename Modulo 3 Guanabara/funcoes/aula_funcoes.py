@@ -7,6 +7,7 @@ def mensagem(msg):                  #funcao com parametros, neste caso msg.
     print ("-"*30)
   
 #programa principal
+lin()
 mensagem ("APRENDA PYTHON")
 mensagem ("HUGO RESENDE")
 ##########################################
