@@ -5,8 +5,11 @@
 #diff21(21) → 0
 
 def diff21(n):
+    if (n<=21):
+        return abs(21-n)
+    else :
+        return abs(21-n)*2
     
-    return abs(n-21)
 
 print(diff21(19))
 print(diff21(10))

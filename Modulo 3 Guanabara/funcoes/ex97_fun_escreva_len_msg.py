@@ -19,7 +19,7 @@ def escreva2(msg):                  #nesta solução, cria se a var tam e atribu
     print ("-"*tam)
 
 
-escreva("Puta")
+escreva("onde")
 escreva ("Hugo")
 escreva("CUrsão de python !!!")
 
