@@ -3,7 +3,10 @@
 #inserida for a correta aparece a mensagem “Acesso permitido!”.
 
 senha =""
-while (senha != "1234"):
+#cont = 0
+while (senha != "1234"): #and (cont<=3):
     senha=input("Qual a senha? --> ")
+    if (senha != "1234"):print("SENHA INCORRECTA !")
+    #cont += 1
 print ("ACESSO OK!")
     
