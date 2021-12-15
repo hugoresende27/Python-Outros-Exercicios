@@ -3,7 +3,10 @@
 #contrário mostra NÃO ACEITE
 
 nome = input("Qual o seu nome?--> ")
-lic = str(input("É licenciado? [S/N]--> "))
+lic = str(input("É licenciado? [S/N]--> ")).lower()
+
 ida = int(input("Idade? --> "))
-if ((lic in 'sS') and (ida>30)): print ("%s com %d anos foi ACEITE"%(nome,ida))
-else: print("NÂO ACEITE")
+if ((lic[0] in 'sS') and (ida>30)): print ("%s com %d anos foi ACEITE"%(nome,ida))
+#if ((lic[0] == 's' or lic[0]=='S') and (ida>30)): print ("%s com %d anos foi ACEITE"%(nome,ida))
+else: print("NÃO ACEITE")
+
