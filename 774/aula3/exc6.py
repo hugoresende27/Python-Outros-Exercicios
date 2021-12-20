@@ -8,13 +8,22 @@
 # ‘mostrar código’.
 # d. Para outra qualquer situação aparece a mensagem: ERRO
 
-lista = [200,'pedido']
+listaPedidos = [200,'pedido']
 
-texto = input("Qual o texto? --> ")
-codigo = int(input("Qual o código? --> "))
-
-match codigo,texto:
-    case [200,"pedido"]:print("PEDIDO COM CÓDIGO 200 ACEITE")
-    case [_,"pedido"]:print("CONSULTAR PEDIDO COM O CÓDIGO %d"%codigo)
-    case [*_,_]:print("FALHA NO PEDIDO COM O CÓDIGO %d"%codigo)
+match listaPedidos:
+    case [200,'pedido']:print("PEDIDO COM CÓDIGO 200 ACEITE")
+    case [_,"pedido"]:print("CONSULTAR PEDIDO COM O CÓDIGO %d NO MANUAL"%listaPedidos[0])
+    case [200,_]:print("FALHA NO PEDIDO COM O CÓDIGO %s"%listaPedidos[1])
     case _:print ("ERRO")
+    
+    
+    
+# texto = input("Qual o texto? --> ")
+# codigo = int(input("Qual o código? --> "))
+
+# match codigo,texto:
+#     case [200,"pedido"]:print("PEDIDO COM CÓDIGO 200 ACEITE")
+#     case [_,"pedido"]:print("CONSULTAR PEDIDO COM O CÓDIGO %d"%codigo)
+#     case [*_,_]:print("FALHA NO PEDIDO COM O CÓDIGO %d"%codigo)
+#     case _:print ("ERRO")
+
