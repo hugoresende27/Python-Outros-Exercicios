@@ -33,16 +33,19 @@ def menu():
                 ****************************
                 """)
 
-   
-menu() 
-r=float(input("Qual o raio? "));
-opcao=int(input("Qual a funcao? :: "))
-match (opcao):
-    case 1:
-        print ("RAIO: %.2f" %funcao_area(r))
-    case 2:
-        print ("RAIO: %.2f" %funcao_perimetro(r))
-    case 3:
-        print ("RAIO: %.2f" %funcao_diametro(r))
-    case 4:
-        exit()
+while(True):
+    menu() 
+    r=float(input("Qual o raio? "));
+    opcao=int(input("Qual a funcao? :: "))
+    match (opcao):
+        case 1:
+            print ("Área: %.2f" %funcao_area(r))
+        case 2:
+            print ("Perimetro: %.2f" %funcao_perimetro(r))
+        case 3:
+            print ("Diametro: %.2f" %funcao_diametro(r))
+        case 4:
+            print("Terminando...")
+            exit()
+        case _:
+            print("Opcao Inválida")

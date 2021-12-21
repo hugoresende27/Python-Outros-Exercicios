@@ -16,4 +16,4 @@ def desenhar(tam):
    
         
 
-desenhar(3)
+desenhar(30)
