@@ -14,6 +14,10 @@ def desenhar(tam):
         print ()
         i = i - 2 
    
-        
+def desenha2(tam):
+    for x in range(tam):
+        print (end="*")    
 
 desenhar(30)
+
+desenha2 (10)

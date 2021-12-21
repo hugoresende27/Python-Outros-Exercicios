@@ -5,18 +5,18 @@
 # “O valor não está presente na lista”
 
 def pesquisa(valor,lista):
-    for x in lista:
-        if valor in lista:return True
-        else: return False
+    lista.pop()#remove o 0 inserido no fim
+    if valor in lista:return True
+    else: return False
         
 lista=[]
 while 0 not in lista:
     lista.append(int(input("Qual o valor(0 para terminar)--> ")));
     
 v = int(input("Qual o valor a pesquisar? -> "))
-presente = pesquisa(v,lista)
 
-if (presente): print ("Está na lista")
+
+if (pesquisa(v,lista)): print ("Está na lista")
 else: print ("Não está!")
 
  
