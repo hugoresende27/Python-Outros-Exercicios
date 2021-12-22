@@ -7,7 +7,7 @@ class Funcionario:
     def setNome(self,nome):
         self.nome=nome
 
-    def mostraNome(self):
+    def getNome(self):
         return self.nome
 
 class Gerente(Funcionario):
@@ -20,17 +20,25 @@ class Gerente(Funcionario):
 
     def autentica (self,valor_senha):
         if valor_senha==self.senha:
-            print ("Acesso Permitido")
             return True
         else:
-            print ("Acesso negado")
             return False
+
+lista = []
+
+for x in range (3):
+    lista.append(Gerente())
+    
+print ("Preencha 3 users e 3 passwords")   
+
+for x in range (3):
+    lista[x].setNome(input("Qual o seu user--> "))
+    lista[x].setSenha(input("Defina a password--> "))
         
-ger1=Gerente()
-print (ger1.nome)
-
-ger1.setNome("Hugo")
-ger1.setSenha("1234")
-
-print ("TESTE SENHA :: " ,(ger1.autentica("1234")))
-print (ger1.mostraNome())
+print ("Bem vindo HR Banks System")
+teste = input("Qual a senha? ")
+for x in range(3):
+    if (lista[x].autentica(teste)):
+        print ("WELCOME MANAGER %s" %lista[x].getNome())
+        
+print ("Encerrando...")
