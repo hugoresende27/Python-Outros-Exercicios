@@ -34,5 +34,17 @@ print ("Raio c2 %d" %c2.getRaio())
 
 c2.aumentaRaio(2)
 print ("Raio c2 %d" %c2.getRaio())
+print(c1.raioMario(c2))
 
 print("c1 maior") if (c1.getRaio() > c2.getRaio())  else print("c2 maior")
+
+if c1.raioMario(c2) : print ("C1 É maior")
+else : print ("Não é maior")
+
+
+c3=Circulo(int(input("X : ")),int(input("Y : ")),int(input("RAIO : ")))
+print ("Area c: %.2f" %c3.area())
+print ("Perimetro c: %.2f" %c3.perimetro())
+print ("Raio c %d" %c3.getRaio())
+if c3.raioMario(c2) : print ("C3 É maior")
+else : print ("Não é maior")
