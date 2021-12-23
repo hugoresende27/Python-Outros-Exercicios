@@ -50,6 +50,8 @@ def printDadosV(lista):
 def printDadosG(lista):
     for x in range(3):
         print (lista[x].getNome(),"\t",lista[x].getSenha()) 
+        
+#####################################################################
 
 listaGer = []
 listaVen = []
