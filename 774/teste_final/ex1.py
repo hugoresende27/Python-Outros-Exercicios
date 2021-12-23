@@ -1,5 +1,6 @@
 import math
 
+print ("\033[37;42m PROGRAMA AREA CINZA\033[m")
 lado=float(input("Qual o valor de L? :: "))
 raio=lado/2
 area_quadrado=lado*lado
