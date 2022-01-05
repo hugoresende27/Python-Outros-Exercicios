@@ -2,8 +2,8 @@
 contagem=0
 
 print ("\033[33;40m PROGRAMA POLICIA - SUSPEITOS\033[m")
-p1 = input ("\033[34;47m Telefonou para a vitima? (s/n) :: \033[m").lower()
-if p1 == "s":
+p1 = input ("\033[34;47m Telefonou para a vitima? (s/n) :: \033[m")
+if p1 in "sS":
     contagem+=1
 
 p2 = input ("\033[34;47m Esteve no local do crime? (s/n) :: \033[m").lower()

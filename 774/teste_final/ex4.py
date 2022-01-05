@@ -1,4 +1,7 @@
-
+# Crie a função triangulo(a,b,c) que classifica um triângulo como equilátero, isósceles ou 
+# escaleno dados os comprimentos a, b, c dos três lados. Um triângulo é equilátero quando 
+# tem os lados todos iguais, isósceles quando tem dois lados iguais e escaleno quando tem os 
+# três lados diferentes
 
 print ("\033[31;47m PROGRAMA TRIANGULO\033[m")
 def fun_triangulo(a,b,c):

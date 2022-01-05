@@ -4,7 +4,6 @@ from uteis import dados,formatacoes
 
 def menu():
 
-    
     formatacoes.linha()
     formatacoes.cabecalho("SISTEMA DE ARQUIVO 1.0")
     formatacoes.linha()
